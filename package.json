@@ -5,7 +5,7 @@
     "ng": "ng",
     "start-ng": "ng serve",
     "start": "node server.js",
-    "build": "ng build --prod --output-hashing=none",
+    "build": "ng build --output-hashing=none",
     "build-prod": "ng build --prod --output-hashing=none --verbose && cp src/package.json dist/package.json && node elements-build.js",
     "build-prod-rollup": "ng build --prod --output-hashing=none --build-optimizer=true --verbose && ./node_modules/.bin/rollup -c && cp src/package.json dist/package.json",
     "elements-concat-files": "node elements-build.js",

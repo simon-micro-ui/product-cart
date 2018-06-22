@@ -5,6 +5,9 @@ import { createCustomElement } from '@angular/elements';
 import { ProductCartComponent } from './productcart/productcart.component';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
 
+import 'zone.js/dist/zone';
+//import '@webcomponents/custom-elements/src/native-shim';
+
 @NgModule({
   declarations: [ProductCartComponent],
   imports: [BrowserModule, Angular2FontawesomeModule],
@@ -16,10 +19,8 @@ export class ProductCartModule {
     const productcart = createCustomElement(ProductCartComponent, { injector });
     let existing = customElements.get('product-cart');
     console.log('existing=' + existing);
-    //if (existing === undefined) {
-      customElements.define('product-cart', productcart);
-      console.log('customElements.define(product-cart) was successful...');
-    //}
+    customElements.define('product-cart', productcart);
+    console.log('customElements.define(product-cart) was successful...');
   }
 
   ngDoBootstrap() {}
