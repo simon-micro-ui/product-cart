@@ -11,7 +11,7 @@
       "schematics": {},
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "ngx-build-plus:build",
           "options": {
             "outputPath": "dist/product-cart",
             "index": "src/index.html",
@@ -25,7 +25,7 @@
               { "glob": "webcomponents-loader.js", "input": "node_modules/@webcomponents/webcomponentsjs", "output": "/assets/lib" },
               { "glob": "custom-elements-es5-adapter.js", "input": "node_modules/@webcomponents/webcomponentsjs", "output": "/assets/lib" }
             ],
-            "styles": ["src/styles.css"],
+            "styles": ["src/styles.css", "node_modules/font-awesome/css/font-awesome.css"],
             "scripts": [
               "src/js/my-test.js"
             ]

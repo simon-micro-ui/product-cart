@@ -5,7 +5,7 @@ import { createCustomElement } from '@angular/elements';
 import { ProductCartComponent } from './productcart/productcart.component';
 import { Angular2FontawesomeModule } from 'angular2-fontawesome/angular2-fontawesome'
 
-import 'zone.js/dist/zone';
+//import 'zone.js/dist/zone';
 //import '@webcomponents/custom-elements/src/native-shim';
 
 @NgModule({

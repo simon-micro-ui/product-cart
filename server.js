@@ -13,7 +13,7 @@ app.get('/index.html', function(req,res) {
 });
 app.get('/product-cart.js', function(req,res) {
     console.log('__dirname:'+__dirname);
-    res.sendFile(path.join(__dirname+'/dist-npm/product-cart/product-cart.js'));
+    res.sendFile(path.join(__dirname+'/dist/product-cart/main.js'));
 });
 
 console.log("Starting server on port 8083");

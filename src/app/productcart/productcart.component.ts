@@ -18,6 +18,7 @@ export class Product {
   selector: 'product-cart',
   templateUrl: './productcart.component.html',
   styleUrls: ['./productcart.component.css'],
+    // Simon: Use ViewEncapsulation.Native so that the styles are bundled with the template and the component’s class into one file.
   encapsulation: ViewEncapsulation.Emulated
 })
 export class ProductCartComponent implements OnInit, OnDestroy {
